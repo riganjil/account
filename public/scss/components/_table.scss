@@ -1,0 +1,13 @@
+.ri-tbl {
+  margin: 0;
+  & tr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.ri-tbl-bm {
+  width: 100%;
+}

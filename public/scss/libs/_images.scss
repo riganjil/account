@@ -1,0 +1,102 @@
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+//only for test
+$main_icon: image-url('sprite.png');
+$main_icon-width: 20px;
+$main_icon-height: 20px;
+$main_position-y: 0px;
+//all icon dari BL
+$icons: image-url('fonts/default.png');
+$icon-width: 24px;
+$icon-height: 24px;
+$position-y: 6480px;
+
+.icon-food {
+  position: relative;
+  background-size: cover;
+  background-image: $icons;
+  background-position-y: $position-y;
+  width: $icon-width;
+  height: $icon-height;
+}
+
+.icon-game {
+  position: relative;
+  background-size: cover;
+  background-image: $icons;
+  background-position-y: $position-y - 1 * $icon-width;
+  width: $icon-width;
+  height: $icon-height;
+  &.medium {
+    position: relative;
+    background-size: cover;
+  }
+}
+
+.icon-text {
+  position: relative;
+  background-size: cover;
+  background-image: $icons;
+  background-position-y: $position-y - 2 * $icon-width;
+  width: $icon-width;
+  height: $icon-height;
+  &.medium {
+    position: relative;
+    background-size: cover;
+  }
+}
+
+//hanya untuk tes
+.ic-reload {
+  position: relative;
+  background-size: cover;
+  background-image: $main_icon;
+  background-position-y: $main_position-y;
+  width: $main_icon-width;
+  height: $main_icon-height;
+}
+
+.ic-close {
+  position: relative;
+  background-size: cover;
+  background-image: $main_icon;
+  background-position-y: $main_position-y - $main_icon-width;
+  width: $main_icon-width;
+  height: $main_icon-height;
+}
+
+.ic-plus {
+  position: relative;
+  background-size: cover;
+  background-image: $main_icon;
+  background-position-y: $main_position-y - (2 * $main_icon-width);
+  width: $main_icon-width;
+  height: $main_icon-height;
+}
+
+.ic-minus {
+  position: relative;
+  background-size: cover;
+  background-image: $main_icon;
+  background-position-y: $main_position-y - (3 * $main_icon-width);
+  width: $main_icon-width;
+  height: $main_icon-height;
+}
+
+.i-game {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: $icons;
+  background-position-y: $position-y - $icon-width;
+}
+
+.text {
+  padding: 50px 150px;
+  background-position: 5px 50%;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/267px-F_icon.svg.png");
+}

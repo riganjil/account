@@ -1,0 +1,40 @@
+//lib
+@import "../libs/colors";
+@import "../libs/images";
+//component
+@import "../components/table";
+@import "../components/button";
+//utility
+@import "compass/css3/border-radius";
+
+h2 {
+  color: $color-primary;
+  text-align: center;
+}
+
+.btn{
+  &.btn-primary{
+    background-color: $color-default;
+    border: none;
+    @include border-radius(4px, 4px);
+  }
+}
+
+.nav-list{
+  li{
+    background-color: #eeeeee;
+    a{
+      color: #666666;
+      border-bottom: 1px solid #bbbbbb;
+    }
+    a:hover{
+      background-color: #cccccc;
+    }
+  }
+}
+
+.page-header{
+  background-color: $color-primary;
+  padding: 10px;
+}
+

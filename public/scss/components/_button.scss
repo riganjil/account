@@ -1,0 +1,23 @@
+.ri-btn{
+  background-color: $color-default;
+  border: none;
+  .primary{
+  }
+}
+
+.ri-btn-primary {
+  background-color: $color-primary;
+  border: none;
+}
+
+.ri-btn-default {
+  background-color: $color-primary;
+  border: none;
+}
+
+.btn{
+  &.btn-primary{
+    background-color: $color-primary;
+    border: none;
+  }
+}
