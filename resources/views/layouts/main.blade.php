@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{url('font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url('css/app.css')}}">
 
     <title>@yield('title')</title>
     @yield('head')

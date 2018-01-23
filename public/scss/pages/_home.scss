@@ -14,9 +14,7 @@ h2 {
 
 .btn{
   &.btn-primary{
-    background-color: $color-default;
-    border: none;
-    @include border-radius(4px, 4px);
+    background-color: $color-primary;
   }
 }
 
@@ -38,3 +36,34 @@ h2 {
   padding: 10px;
 }
 
+.navbar{
+  border-bottom: 1px solid #cccccc;
+  background-color: #EEEEEE;
+}
+
+$main_padd: 5px;
+$main_mar: 5px;
+
+.pad5{
+  padding: $main_padd;
+}
+
+.pad10{
+  padding: $main_padd * 2;
+}
+
+.pad15{
+  padding: $main_padd * 3;
+}
+
+.mar5{
+  margin: $main_mar;
+}
+
+.mar10{
+  margin: $main_mar * 2;
+}
+
+.mar15{
+  margin: $main_mar * 3;
+}
