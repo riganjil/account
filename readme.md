@@ -24,7 +24,6 @@ setup database on .env file
 ```
 
 ## Usage
-Import :
 ```php
 php artisan serve
 ```
