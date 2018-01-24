@@ -10,6 +10,7 @@ use App\Http\Requests;
 use Auth;
 use function Sodium\compare;
 use Validator;
+use Hash;
 
 class AuthController extends Controller
 {
@@ -47,6 +48,7 @@ class AuthController extends Controller
 //            'email' => 'required|email',
 //            'username' => 'required|min:6|max:15',
 //            'password' => 'required|min:8|max:16'
+//            'password_confirmation' => 'required|min:8|max:16'
 //        ]);
 //
 //        if ($validator->fails()) {
@@ -60,5 +62,37 @@ class AuthController extends Controller
     public function register_next()
     {
         return view('pages.auth.register-next');
+    }
+
+    public function aksi_register_next(Request $request)
+    {
+
+//        $validator = Validator::make($request->all(), [
+//            'email' => 'required|email',
+//            'username' => 'required|min:6|max:15',
+//            'password' => 'required|min:8|max:16'
+//            'password_confirmation' => 'required|min:8|max:16'
+//        ]);
+//
+//        if ($validator->fails()) {
+//            return $validator->errors()->all();
+//        }
+
+        $cek = User::where('username', $request->username)->first();
+        $cek_email = User::where('email', $request->email)->first();
+        if ($cek) {
+            return response()->json(['status' => '400', 'error' => true, 'message' => 'Username telah terdaftar'], 200);
+        }
+        if ($cek_email) {
+            return response()->json(['status' => '400', 'error' => true, 'message' => 'Email telah terdaftar'], 200);
+        }
+
+        $simpan = new User();
+        $simpan->email = $request->email;
+        $simpan->username = $request->username;
+        $simpan->password = Hash::make($request->password);
+        $simpan->save();
+
+        return view('pages.auth.register-complete');
     }
 }

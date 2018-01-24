@@ -1,22 +1,18 @@
 @extends('layouts.main')
 @section('title')
-    Shop - My Profile
+    Shop - Registration Complete
 @endsection
 @section('head')
 @endsection
 @section('body')
-    @include('partials._navbar', ['title' => 'My Profile', 'url' => '/account'])
+    @include('partials._navbar', ['title' => 'Registration Complete', 'url' => '/login'])
     <div class="pad10"></div>
     <div class="pad15">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Welcome Back, {{Auth::User()->username}}</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="{{url('auth/logout')}}">Logout</a>
+                    <h3>Selamat, Pendaftaran telah berhasil</h3>
+                    <a href="{{url('auth/login')}}">Silahkan login</a>
                 </div>
             </div>
         </div>
