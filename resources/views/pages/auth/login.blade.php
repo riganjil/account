@@ -19,7 +19,7 @@
                         </div>
                         <div class="form-group">
                             <label for="pass">Password</label>
-                            <input type="password" name="password" class="form-control text-input" id="pass" required>
+                            <input type="password" name="password" class="form-control text-input" id="pass" minlength="8" maxlength="16" required>
                         </div>
                         <div class="form-group">
                             <div class="pad10"></div>

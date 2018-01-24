@@ -131,74 +131,65 @@ h2 {
   border-bottom: none; }
 
 /* line 63, ../scss/pages/_home.scss */
-label {
-  font-size: 14px;
-  opacity: .9; }
-
-/* line 69, ../scss/pages/_home.scss */
-p a {
-  color: #FC5830; }
-
-/* line 74, ../scss/pages/_home.scss */
 .text-input {
   border: none;
   border-bottom: 1px solid #cccccc;
   border-radius: 0px; }
-  /* line 79, ../scss/pages/_home.scss */
+  /* line 68, ../scss/pages/_home.scss */
   .text-input:focus {
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
     border-bottom: 1px solid #FC5830; }
 
-/* line 87, ../scss/pages/_home.scss */
+/* line 76, ../scss/pages/_home.scss */
 #ic_title {
   color: #FC5830; }
 
-/* line 94, ../scss/pages/_home.scss */
+/* line 83, ../scss/pages/_home.scss */
 .pad5 {
   padding: 5px; }
 
-/* line 98, ../scss/pages/_home.scss */
+/* line 87, ../scss/pages/_home.scss */
 .pad10 {
   padding: 10px; }
 
-/* line 102, ../scss/pages/_home.scss */
+/* line 91, ../scss/pages/_home.scss */
 .pad15 {
   padding: 15px; }
 
-/* line 106, ../scss/pages/_home.scss */
+/* line 95, ../scss/pages/_home.scss */
 .mar5 {
   margin: 5px; }
 
-/* line 110, ../scss/pages/_home.scss */
+/* line 99, ../scss/pages/_home.scss */
 .mar10 {
   margin: 10px; }
 
-/* line 114, ../scss/pages/_home.scss */
+/* line 103, ../scss/pages/_home.scss */
 .mar15 {
   margin: 15px; }
 
-/* line 118, ../scss/pages/_home.scss */
+/* line 107, ../scss/pages/_home.scss */
 .card {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
   border: none; }
-  /* line 124, ../scss/pages/_home.scss */
+  /* line 113, ../scss/pages/_home.scss */
   .card h6, .card p {
     text-align: center; }
-  /* line 127, ../scss/pages/_home.scss */
+  /* line 116, ../scss/pages/_home.scss */
   .card h6 {
     color: #f74d18; }
-  /* line 131, ../scss/pages/_home.scss */
+  /* line 120, ../scss/pages/_home.scss */
   .card .table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    /* line 138, ../scss/pages/_home.scss */
+    /* line 127, ../scss/pages/_home.scss */
     .card .table td {
       -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -206,15 +197,15 @@ p a {
       padding: 2px;
       border: none;
       text-align: center; }
-      /* line 146, ../scss/pages/_home.scss */
+      /* line 135, ../scss/pages/_home.scss */
       .card .table td span {
         color: #f74d18; }
 
-/* line 153, ../scss/pages/_home.scss */
+/* line 142, ../scss/pages/_home.scss */
 .card-bg {
   background: #FEEEEA; }
 
-/* line 157, ../scss/pages/_home.scss */
+/* line 146, ../scss/pages/_home.scss */
 .badge-primary {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;

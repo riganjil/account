@@ -16,6 +16,11 @@ h2 {
   &.btn-primary {
     background-color: $color-primary;
   }
+
+  &.btn-outline-primary {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+  }
 }
 
 .nav-list {
@@ -39,6 +44,14 @@ h2 {
 .navbar {
   border-bottom: 1px solid #cccccc;
   background-color: #EEEEEE;
+
+  & .table {
+    & td {
+      border: none;
+      padding: 0;
+      text-align: center;
+    }
+  }
 }
 
 #footer {
@@ -47,10 +60,28 @@ h2 {
   border-bottom: none;
 }
 
+label {
+  font-size: 14px;
+  opacity: .9;
+}
+
+p {
+  & a {
+    color: $color-primary;
+  }
+}
+
 .text-input {
   border: none;
   border-bottom: 1px solid #cccccc;
   border-radius: 0px;
+
+  &:focus {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid $color-primary;
+  }
 }
 
 #ic_title {
@@ -82,4 +113,52 @@ $main_mar: 5px;
 
 .mar15 {
   margin: $main_mar * 3;
+}
+
+.card {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+
+  & h6, p {
+    text-align: center;
+  }
+  & h6 {
+    color: #f74d18;
+  }
+
+  & .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    & td {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 2px;
+      border: none;
+      text-align: center;
+
+      & span {
+        color: #f74d18;
+      }
+    }
+  }
+}
+
+.card-bg {
+  background: #FEEEEA;
+}
+
+.badge-primary {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 4px 10px;
+  background-color: $color-primary;
+  color: #ffffff;
 }

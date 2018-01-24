@@ -32,9 +32,13 @@
                             <input type="password" name="password_confirmation" class="form-control text-input"
                                    minlength="8" maxlength="16" id="password_confirmation" required>
                         </div>
-                        <div class="form-group">
-                            <div class="pad10"></div>
+                        <div class="form-group mt-4">
                             <button type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
+                            <p class="text-center mt-4">
+                                <small class="text-muted">
+                                    Sudah punya akun? <a href="{{url('auth/login')}}">login disini</a>
+                                </small>
+                            </p>
                         </div>
                     </form>
                 </div>
