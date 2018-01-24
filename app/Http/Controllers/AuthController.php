@@ -21,14 +21,14 @@ class AuthController extends Controller
 
     public function aksi_login(Request $request)
     {
-//        $validator = Validator::make($request->all(), [
-//            'username' => 'required|min:6|max:15',
-//            'password' => 'required|min:8|max:16'
-//        ]);
-//
-//        if ($validator->fails()) {
-//            return $validator->errors()->all();
-//        }
+        $validator = Validator::make($request->all(), [
+            'username' => 'required|min:6|max:15',
+            'password' => 'required|min:8|max:16'
+        ]);
+
+        if ($validator->fails()) {
+            return $validator->errors()->all();
+        }
 
         if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
             return redirect('account');
@@ -44,16 +44,16 @@ class AuthController extends Controller
 
     public function aksi_register(Request $request)
     {
-//        $validator = Validator::make($request->all(), [
-//            'email' => 'required|email',
-//            'username' => 'required|min:6|max:15',
-//            'password' => 'required|min:8|max:16'
-//            'password_confirmation' => 'required|min:8|max:16'
-//        ]);
-//
-//        if ($validator->fails()) {
-//            return $validator->errors()->all();
-//        }
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'username' => 'required|min:6|max:15',
+            'password' => 'required|min:8|max:16',
+            'password_confirmation' => 'required|min:8|max:16',
+        ]);
+
+        if ($validator->fails()) {
+            return $validator->errors()->all();
+        }
 
         $data = $request;
         return view('pages.auth.register-next', compact('data'));
