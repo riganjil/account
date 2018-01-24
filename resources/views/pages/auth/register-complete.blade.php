@@ -19,5 +19,10 @@
     </div>
 @endsection
 @section('foot')
+    <script type="text/javascript">
+        setTimeout(function () {
+            window.location = "http://shopee.co.id";
+        }, 5000);
+    </script>
 @endsection
 

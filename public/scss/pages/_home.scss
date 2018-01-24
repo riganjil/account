@@ -12,70 +12,74 @@ h2 {
   text-align: center;
 }
 
-.btn{
-  &.btn-primary{
+.btn {
+  &.btn-primary {
     background-color: $color-primary;
   }
 }
 
-.nav-list{
-  li{
+.nav-list {
+  li {
     background-color: #eeeeee;
-    a{
+    a {
       color: #666666;
       border-bottom: 1px solid #bbbbbb;
     }
-    a:hover{
+    a:hover {
       background-color: #cccccc;
     }
   }
 }
 
-.page-header{
+.page-header {
   background-color: $color-primary;
   padding: 10px;
 }
 
-.navbar{
+.navbar {
   border-bottom: 1px solid #cccccc;
   background-color: #EEEEEE;
 }
 
-#footer{
+#footer {
   border-top: 1px solid #cccccc;
   background-color: #EEEEEE;
   border-bottom: none;
 }
 
-.text-input{
+.text-input {
   border: none;
   border-bottom: 1px solid #cccccc;
   border-radius: 0px;
 }
 
+#ic_title {
+  color: $color-primary;
+}
+
 $main_padd: 5px;
 $main_mar: 5px;
 
-.pad5{
+.pad5 {
   padding: $main_padd;
 }
 
-.pad10{
+.pad10 {
   padding: $main_padd * 2;
 }
 
-.pad15{
+.pad15 {
   padding: $main_padd * 3;
 }
 
-.mar5{
+.mar5 {
   margin: $main_mar;
 }
 
-.mar10{
+.mar10 {
   margin: $main_mar * 2;
 }
 
-.mar15{
+.mar15 {
   margin: $main_mar * 3;
 }
