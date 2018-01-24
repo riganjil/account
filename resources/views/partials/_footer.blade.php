@@ -1,3 +1,3 @@
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar fixed-bottom navbar-light bg-light" id="footer">
+    <button class="btn btn-primary btn-block">{{ $title}}</button>
 </nav>

@@ -34,7 +34,7 @@
                         </div>
                         <div class="form-group">
                             <div class="pad10"></div>
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
+                            @include('partials._footer', ['title' => 'Kirimkan'])
                         </div>
                     </form>
                 </div>
