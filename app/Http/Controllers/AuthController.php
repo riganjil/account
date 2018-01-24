@@ -43,6 +43,16 @@ class AuthController extends Controller
 
     public function aksi_register(Request $request)
     {
+//        $validator = Validator::make($request->all(), [
+//            'email' => 'required|email',
+//            'username' => 'required|min:6|max:15',
+//            'password' => 'required|min:8|max:16'
+//        ]);
+//
+//        if ($validator->fails()) {
+//            return $validator->errors()->all();
+//        }
+
         $data = $request;
         return view('pages.auth.register-next', compact('data'));
     }

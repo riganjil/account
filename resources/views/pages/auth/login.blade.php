@@ -14,12 +14,12 @@
                     <form action="{{url('auth/login')}}" method="post">
                         {{csrf_field()}}
                         <div class="form-group">
-                            <label for="">Username</label>
-                            <input type="text" name="username" class="form-control text-input" minlength="6" maxlength="15">
+                            <label for="user">Username</label>
+                            <input type="text" name="username" class="form-control text-input" id="user" minlength="6" maxlength="15">
                         </div>
                         <div class="form-group">
-                            <label for="">Password</label>
-                            <input type="password" name="password" class="form-control text-input">
+                            <label for="pass">Password</label>
+                            <input type="password" name="password" class="form-control text-input" id="pass" required>
                         </div>
                         <div class="form-group">
                             <div class="pad10"></div>
