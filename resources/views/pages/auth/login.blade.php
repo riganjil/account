@@ -15,14 +15,15 @@
                         {{csrf_field()}}
                         <div class="form-group">
                             <label for="">Username</label>
-                            <input type="text" name="username" class="form-control" minlength="6" maxlength="15">
+                            <input type="text" name="username" class="form-control text-input" minlength="6" maxlength="15">
                         </div>
                         <div class="form-group">
                             <label for="">Password</label>
-                            <input type="password" name="password" class="form-control">
+                            <input type="password" name="password" class="form-control text-input">
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            <div class="pad10"></div>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
                         </div>
                     </form>
                 </div>
@@ -30,6 +31,7 @@
         </div>
     </div>
 @endsection
+
 @section('foot')
 @endsection
 

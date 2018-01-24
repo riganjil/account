@@ -12,23 +12,24 @@
                 <form action="{{url('auth/register')}}" method="post">
                     {{csrf_field()}}
                     <div class="form-group">
-                        <label for="username">Email</label>
-                        <input type="text" name="email" class="form-control" id="email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="form-control text-input" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input type="text" name="username" class="form-control" id="username">
+                        <input type="text" name="username" class="form-control text-input" id="username" minlength="6" maxlength="15" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" id="password">
+                        <input type="password" name="password" class="form-control text-input" minlength="8" maxlength="16" id="password" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Konfirmasi Password</label>
-                        <input type="password" name="password_confirmation" class="form-control" id="password_confirmation">
+                        <label for="password_confirmation">Konfirmasi Password</label>
+                        <input type="password" name="password_confirmation" class="form-control text-input" minlength="8" maxlength="16" id="password_confirmation" required>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        <div class="pad10"></div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Register</button>
                     </div>
                 </form>
             </div>
