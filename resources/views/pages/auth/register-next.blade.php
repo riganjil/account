@@ -5,7 +5,7 @@
 @section('head')
 @endsection
 @section('body')
-    @include('partials._navbar', ['title' => 'Complete Registration', 'url' => '/register'])
+    @include('partials._navbar', ['title' => 'Pendaftaran', 'url' => '/register'])
     <div class="pad10"></div>
     <div class="pad15">
         <div class="container">
