@@ -16,7 +16,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <a href="{{url('auth/logout')}}">Logout</a>
+                    <a href="{{url('account/logout')}}">Logout</a>
                 </div>
             </div>
         </div>
